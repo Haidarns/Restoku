@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgListMain"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nama Resto"
+        android:id="@+id/titleMainList"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/distMainList"
+        android:layout_toRightOf="@+id/imgListMain"
+        android:layout_toEndOf="@+id/imgListMain"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Alamat Resto"
+        android:id="@+id/addressListMain"
+        android:layout_below="@+id/titleMainList"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/distMainList"
+        android:layout_alignLeft="@+id/titleMainList"
+        android:layout_alignStart="@+id/titleMainList"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15,7"
+        android:id="@+id/distMainList"
+        android:textSize="32sp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textView2"
+        android:textColor="#259b24"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="km"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/distMainList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp" />
+</RelativeLayout>
